@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Eco<span>Flight</span></a>
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="calculator.html" class="active">Calculator</a></li>
+                <li><a href="offset.html" class="btn-primary">Contact Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Flight <span>Carbon Calculator</span></h1>
+            <p>Measure your flight's exact carbon emissions based on route, aircraft, and class.</p>
+        </div>
+    </section>
+
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calculator-container">
+                <div class="calculator-input">
+                    <div class="input-group">
+                        <label for="departure">Departure Airport (IATA)</label>
+                        <input type="text" id="departure" placeholder="e.g., LHR">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="arrival">Arrival Airport (IATA)</label>
+                        <input type="text" id="arrival" placeholder="e.g., JFK">
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="cabin-class">Cabin Class</label>
+                            <select id="cabin-class">
+                                <option value="economy">Economy</option>
+                                <option value="premium">Premium Economy</option>
+                                <option value="business">Business</option>
+                                <option value="first">First Class</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="passengers">Passengers</label>
+                            <input type="number" id="passengers" min="1" value="1">
+                        </div>
+                    </div>
+                    
+                    <button id="calculate-btn" class="btn-primary">
+                        <i class="fas fa-calculator"></i> Calculate Emissions
+                    </button>
+                    
+                    <div class="flight-path">
+                        <div class="plane-icon hidden" id="plane-icon">✈️</div>
+                    </div>
+                </div>
+                
+                <div class="calculator-output">
+                    <div id="result" class="hidden">
+                        <h3>Your Flight's Carbon Footprint</h3>
+                        <div id="emission-result"></div>
+                        <div id="comparison"></div>
+                        <a href="offset.html" class="btn-primary mt-2">Offset This Flight</a>
+                    </div>
+                    
+                    <div id="default-output">
+                        <div class="output-placeholder">
+                            <i class="fas fa-cloud"></i>
+                            <h3>Your Results Will Appear Here</h3>
+                            <p>Enter your flight details and click "Calculate Emissions" to see your carbon footprint.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="error" class="hidden"></div>
+                    
+                    <div class="loading hidden" id="loading">
+                        <div class="spinner"></div>
+                        <p>Calculating your carbon footprint...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>How We Calculate</h3>
+                    <p>Our algorithm uses aircraft type, distance, load factor, and cabin class to provide accurate emissions estimates.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Why It Matters</h3>
+                    <p>Aviation accounts for 2.5% of global CO₂ emissions, with impacts 2-4 times greater due to altitude effects.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Reducing Impact</h3>
+                    <p>Flying economy, choosing direct routes, and offsetting can significantly reduce your footprint.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>EcoFlight</h3>
+                    <p>Helping travelers understand and reduce their environmental impact since 2023.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="calculator.html">Carbon Calculator</a></li>
+                        <li><a href="offset.html">Offset Programs</a></li>
+                        <li><a href="routes.html">Alternative Routes</a></li>
+                        <li><a href="analytics.html">Travel Analytics</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 EcoFlight. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>
