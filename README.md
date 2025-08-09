@@ -1,6 +1,5 @@
 # ✈️ EcoFlight - Flight Carbon Calculator
-
-<img width="1914" height="964" alt="Image" src="https://github.com/user-attachments/assets/b93bdeb6-c99a-40ef-b076-7915cfa00150" />
+<img width="1907" height="962" alt="Image" src="https://github.com/user-attachments/assets/db10854a-6f72-4d07-953e-3272830dfde6" />
 
 *A modern tool to calculate and offset your flight's carbon emissions.*
 
@@ -53,7 +52,8 @@ EcoFlight is a web application that helps travelers:
 
 | Calculator | Offset Programs | Analytics |
 |------------|-----------------|-----------|
-| ![Calculator]<img width="1907" height="962" alt="Image" src="https://github.com/user-attachments/assets/db10854a-6f72-4d07-953e-3272830dfde6" /> | ![Offset]<img width="1904" height="964" alt="Image" src="https://github.com/user-attachments/assets/3d13af01-07eb-4d8b-ac4a-5c3145da1620" /> | ![Analytics]<img width="1916" height="961" alt="Image" src="https://github.com/user-attachments/assets/1a4c07f4-e5a3-4499-8697-d25bf99bf40c" /> |
+| <img width="1916" height="961" alt="Image" src="https://github.com/user-attachments/assets/1a4c07f4-e5a3-4499-8697-d25bf99bf40c" /> | <img width="1904" height="964" alt="Image" src="https://github.com/user-attachments/assets/3d13af01-07eb-4d8b-ac4a-5c3145da1620" /> | <img width="1914" height="964" alt="Image" src="https://github.com/user-attachments/assets/b93bdeb6-c99a-40ef-b076-7915cfa00150" />
+ |
 
 ## 🛠️ Installation
 
