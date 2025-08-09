@@ -1,6 +1,7 @@
 # ✈️ EcoFlight - Flight Carbon Calculator
 
-![Project Preview](https://i.imgur.com/XYZ1234.png)  
+![Project Preview]<img width="1904" height="964" alt="Image" src="https://github.com/user-attachments/assets/3d13af01-07eb-4d8b-ac4a-5c3145da1620" />
+ 
 *A modern tool to calculate and offset your flight's carbon emissions.*
 
 ## 🌍 About the Project
